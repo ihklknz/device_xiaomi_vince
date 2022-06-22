@@ -212,6 +212,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.apk_verity.mode=2
 
+# IORAP Feature -- Imported from LA.QSSI.12.0.r1-07100.01-qssi.0
+PRODUCT_PRODUCT_PROPERTIES += \
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+    
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
 debug.stagefright.omx_default_rank=0 \
