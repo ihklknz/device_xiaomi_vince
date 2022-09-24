@@ -8,6 +8,7 @@ allow init sysfs_leds:lnk_file read;
 
 allow init sysfs:file setattr;
 allow init socket_device:sock_file { create setattr unlink };
+allow init sysfs:file write;
 
 # Camera
 get_prop(init, camera_prop)
