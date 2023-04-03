@@ -75,6 +75,9 @@ vendor.audio.feature.multi_voice_session.enable=true
 vendor.mm.enable.qcom_parser=301715
 vendor.audio.feature.incall_music.enable=true
 
+# APCF extended
+bluetooth.le.disable_apcf_extended_features=1
+
 # ART/Dex2oat
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
