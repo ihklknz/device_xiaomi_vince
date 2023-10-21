@@ -459,7 +459,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++ \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Protobuf
 PRODUCT_PACKAGES += \
