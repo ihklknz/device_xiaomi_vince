@@ -119,7 +119,11 @@ bluetooth.hardware.power.operating_voltage_mv=3300
 
 # Blur
 PRODUCT_PRODUCT_PROPERTIES += \
-persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1 \
+ro.surface_flinger.supports_background_blur=1 \
+persist.sys.sf.disable_blurs=0 \
+persist.sys.sf.native_mode=1 \
+ro.launcher.blur.appLaunch=0
 
 # Boot
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -152,7 +156,7 @@ persist.vendor.cne.feature=1
 # Display/Graphics
 PRODUCT_VENDOR_PROPERTIES += \
 debug.gralloc.enable_fb_ubwc=1 \
-debug.hwui.renderer=opengl \
+debug.hwui.renderer=skiagl \
 debug.hwui.skia_atrace_enabled=false \
 debug.mdpcomp.logs=0 \
 ro.hardware.egl=adreno \
