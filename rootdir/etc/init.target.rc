@@ -26,6 +26,14 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
+# No yellow flash
+#
+
+on init
+    write /sys/class/leds/led:flash_1/max_brightness 0
+    write /sys/class/leds/led:torch_1/max_brightness 0
+    write /sys/class/leds/torch-light1/max_brightness 0
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 0
 
 on early-init
     write /proc/sys/kernel/sched_boost 1
