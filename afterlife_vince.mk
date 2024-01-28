@@ -40,7 +40,7 @@ BUILD_GALLERYGO := true
 BUILD_GMAIL := true
 USE_PIXEL_CHARGING := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
-TARGET_SUPPORT_BLUR := true
+TARGET_SUPPORT_BLUR := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -52,9 +52,3 @@ TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "xiaomi/vince/vince:8.1.0/OPM1.171019.019/V11.0.2.0.OEGMIXM:user/release-keys"
