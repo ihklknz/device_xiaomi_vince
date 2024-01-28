@@ -25,6 +25,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
+# Inherit Extra Viper4AFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Inherit some common Afterlife stuff.
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
