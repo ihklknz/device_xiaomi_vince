@@ -333,10 +333,6 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
     libandroid_net
 
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    GCamGo
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
