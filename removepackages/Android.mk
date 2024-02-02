@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := removepackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := Aperture Maps Drive YouTube Videos Wellbeing DevicePersonalizationPrebuiltPixel2020 Calendar
+LOCAL_OVERRIDES_PACKAGES := Maps Drive YouTube Videos GoogleTTS AndroidAutoStubPrebuilt TurboPrebuilt WellbeingPrebuilt Velvet SafetyHubPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
