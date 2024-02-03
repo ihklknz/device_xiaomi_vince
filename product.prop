@@ -1,0 +1,12 @@
+# Blur
+persist.sys.sf.disable_blurs=1
+
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
+# FS-verity
+ro.apk_verity.mode=2
+
+# IORAP Feature -- Imported from LA.QSSI.12.0.r1-07100.01-qssi.0
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true

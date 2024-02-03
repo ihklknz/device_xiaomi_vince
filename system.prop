@@ -1,4 +1,39 @@
-#skialgl optimization
+# Boot
+sys.vendor.shutdown.waittime=500
+
+# Camera
+persist.vendor.camera.display.lmax=1280x720
+persist.vendor.camera.display.umax=1920x1080
+vendor.camera.lowpower.record.enable=1
+media.camera.ts.monotonic=1
+persist.camera.mct.debug=0
+persist.camera.iface.logs=0
+persist.camera.imglib.logs=0
+persist.camera.isp.clock.optmz=0
+persist.camera.isp.debug=0
+persist.camera.sensor.debug=0
+persist.camera.stats.test=5
+vidc.enc.dcvs.extra-buff-count=2
+
+# Fingerprint
+persist.qfp=false
+
+# Frp
+ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+# Recovery
+persist.sys.recovery_update=false
+
+# System
+persist.sys.binary_xml=false
+
+# skialgl optimization
 debug.hwui.renderer=skiagl_threaded
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
+
+# Watchdog
+ro.hw_timeout_multiplier=3
+
+# Zygote
+zygote.critical_window.minute=10
